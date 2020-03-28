@@ -40,6 +40,7 @@ You can start auxi locally by running:
     % docker-compose up
 
 You'll need to provide the `HUBOT_SLACK_TOKEN` environment variable in `docker-compose.yml`:
+
     `HUBOT_SLACK_TOKEN: xoxb-...`
 
 You should then be able to invite your bot into a channel and use it. The name of the bot should match whatever you configured for the Slack bot user in this step and in the previous one.
