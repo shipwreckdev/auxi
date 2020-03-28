@@ -5,18 +5,18 @@
 #   You'll likely outgrow the need for this script as your engineering organization grows, but it can be helpful in the interim.
 #
 # Commands:
-#   hubot q - show the queue
-#   hubot q me - add yourself to the queue
-#   hubot q done - remove yourself from the queue and tag the next person in line
-#   hubot q ping - ping the first person in line in the queue for an update
 #   hubot q clear - empty the queue entirely
 #   hubot q define <foo> - provide a description of the queue
+#   hubot q done - remove yourself from the queue and tag the next person in line (if there is one)
+#   hubot q ls - show the queue
+#   hubot q me - add yourself to the queue
 #   hubot q notes add <note> - add a note to the list of notes for this queue
-#   hubot q notes rm <note> - remove a note from the list of notes for this queue
 #   hubot q notes ls - list notes for this queue
+#   hubot q notes rm <note> - remove a note from the list of notes for this queue
+#   hubot q ping - ping the first person in line in the queue for an update
 #
 # Authors:
-#   Scott Hawkins
+#   Scott Hawkins (scott@echoboomer.net) / shipwreck.dev https://github.com/shipwreckdev
 
 module.exports = (robot) ->
   desc = ''
